@@ -39,15 +39,28 @@ The dataset consists of three tables: **Users**, **Books**, and **Ratings**
 | `Book-Rating` | Rating given by the user (numeric scale, e.g., 0–10) |
 
 _Notes:_  
-- All tables are linked using `User-ID` and `ISBN`  
+- Books table and Ratings table are combined using 'ISBN' column 
 - Item-based collaborative filtering uses **book-to-book similarity**  
 - Ratings of `0` may indicate _not rated_ or _neutral_  
 
 ---
 
 ## 🛠️ Tools & Technologies
-- **Python:** pandas, numpy, scikit-learn  
-- **Jupyter Notebook** for EDA and modeling  
+- **Python:** pandas, numpy, scikit-learn, cosine similarity, TF-IDF Vectorization 
+- **Google Colab** for EDA and modeling  
 - **Visualization:** matplotlib, seaborn  
 
 ---
+
+## ⚡ Key Features
+- Two separate recommendation models:  
+  - **Content-Based Filtering** – recommends books based on similarity in attributes such as author, genre, and publication year.  
+  - **Collaborative Filtering** – recommends books by analyzing user–item interactions and finding similar users or items.  
+- In-depth analysis of user demographics and rating patterns  
+
+---
+
+## 📈 Future Work
+- Implement a **hybrid filtering model** combining content and collaborative approaches for better recommendations  
+- Deploy a **web interface** for real-time recommendations 
+
